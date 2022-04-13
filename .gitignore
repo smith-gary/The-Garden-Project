@@ -23,12 +23,12 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-
-### APPLICATION PROPERTIES ###
-src/main/resources/application.properties
 ###
 js/keys.js
 
 
 ### APPLICATION PROPERTIES ###
 src/main/resources/application.properties
+
+### vs code
+.vscode
