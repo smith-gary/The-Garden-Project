@@ -23,6 +23,15 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
+<<<<<<< HEAD
 
 ### APPLICATION PROPERTIES ###
 src/main/resources/application.properties
+=======
+###
+js/keys.js
+
+
+### APPLICATION PROPERTIES ###
+src/main/resources/application.properties
+>>>>>>> 2ee788f6395937ccf53f47216b141a1d9316c118
