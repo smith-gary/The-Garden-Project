@@ -1,8 +1,9 @@
 package com.tgp.tgp.models;
 
 
-import javax.persistance.*;
-import javax.validation.*;
+import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
 @Entity
@@ -66,4 +67,5 @@ public class Users {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
+}
 	
