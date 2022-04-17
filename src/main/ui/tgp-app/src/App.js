@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Navbar from "./components/Navbar";
+import homeImg from "./images/homeImg.jpeg";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <img
+        className="HomeImg"
+        src={homeImg}
+        alt="plants and garden tools"
+      ></img>
+      <h2>
+        Welcome to The Garden Project. Here is a place to design and track the garden of your dreams. Feel free to look around or jump right in to designing that perfect garden!
+      </h2>
     </div>
   );
 }
