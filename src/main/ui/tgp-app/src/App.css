@@ -7,3 +7,8 @@
   width: 100%;
   height: auto;
 }
+
+.NavLinks {
+  text-decoration: none;
+  color: white;
+}
