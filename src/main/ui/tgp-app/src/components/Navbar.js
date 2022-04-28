@@ -12,8 +12,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import { NavLink } from "react-router-dom";
-
-// import { BrowserRouter, Route, Link } from "react-router-dom";
+import '../App.css';
 
 const pages = [
   <NavLink to="/" style={isActive => ({
@@ -53,7 +52,7 @@ const Navbar = () => {
 
   return (
     <AppBar position="static">
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" >
         <Toolbar disableGutters>
           <Typography
             variant="h6"

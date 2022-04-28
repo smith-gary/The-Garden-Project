@@ -2,13 +2,34 @@
   text-align: center;
 }
 
+.body {
+  margin: 0;
+}
+
+/* . {
+  color: green;
+} */
+
 .HomeImg {
-  opacity: 0.5;
   width: 100%;
   height: auto;
+  opacity: 0.4;
 }
 
 .NavLinks {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
 }
+
+.welcome-msg {
+  position: absolute;
+  top: 200px;
+  height: auto;
+  width: auto;
+  text-align: center;
+  color: rgb(19, 87, 2);
+  margin: 60px;
+  padding: 50px;
+  font-weight: bold;
+}
+
