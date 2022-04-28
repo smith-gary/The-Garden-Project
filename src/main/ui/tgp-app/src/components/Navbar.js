@@ -12,15 +12,23 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import { NavLink } from "react-router-dom";
-
-// import { BrowserRouter, Route, Link } from "react-router-dom";
+import '../App.css';
 
 const pages = [
-  <NavLink to="/">Home</NavLink>,
-  <NavLink to="/signup">Sign-Up</NavLink>,
-  <NavLink to="/create-garden">Create Graden</NavLink>,
-  <NavLink to="/plant-categories">Plant Categories</NavLink>,
+  <NavLink to="/" style={isActive => ({
+    color: isActive ? "white" : "blue"
+  })}>Home</NavLink>,
+  <NavLink to="/signup" style={isActive => ({
+    color: isActive ? "white" : "blue"
+  })}>Sign-Up</NavLink>,
+  <NavLink to="/create-garden" style={isActive => ({
+    color: isActive ? "white" : "blue"
+  })}>Create Graden</NavLink>,
+  <NavLink to="/plant-categories" style={isActive => ({
+    color: isActive ? "white" : "blue"
+  })}>Plant Categories</NavLink>,
 ];
+
 const settings = ["Profile", "Designs", "Logout"];
 
 const Navbar = () => {
@@ -44,7 +52,7 @@ const Navbar = () => {
 
   return (
     <AppBar position="static">
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" >
         <Toolbar disableGutters>
           <Typography
             variant="h6"
@@ -56,8 +64,8 @@ const Navbar = () => {
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-            <IconButton
-              size="large"
+            <IconButton 
+            size="large"
               aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
@@ -145,4 +153,5 @@ const Navbar = () => {
     </AppBar>
   );
 };
+
 export default Navbar;

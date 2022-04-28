@@ -2,9 +2,9 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/layout";
 import Home from "./pages/home";
-// import Home from "./pages/home";
-// import Layout from './pages/layout';
 import Signup from "./pages/signup";
+import Design from "./pages/design";
+import Categories from "./pages/categories";
 
 export default function App() {
   return (
@@ -13,6 +13,8 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="signup" element={<Signup />} />
+          <Route path="create-garden" element={<Design />} />
+          <Route path="plant-categories" element={<Categories />} />
         </Route>
       </Routes>
     </BrowserRouter>
